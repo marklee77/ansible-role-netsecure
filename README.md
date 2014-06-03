@@ -1,16 +1,18 @@
-marklee77.fail2ban
-==================
+marklee77.netsecure
+===================
 
-[![Build Status](https://travis-ci.org/marklee77/ansible-role-fail2ban.svg?branch=master)](https://travis-ci.org/marklee77/ansible-role-fail2ban)
+[![Build Status](https://travis-ci.org/marklee77/ansible-role-netsecure.svg?branch=master)](https://travis-ci.org/marklee77/ansible-role-netsecure)
 
-fail2ban role for Ubuntu.
+Installs packages and makes configuration changes to improve Ubuntu network
+security. In particular, this installs fail2ban and various openssh and openssl
+blacklists.
 
 Example Playbook
 -------------------------
 
-    - hosts: default
+    - hosts: all
       roles:
-        - marklee77.fail2ban
+        - marklee77.netsecure
 
 License
 -------
