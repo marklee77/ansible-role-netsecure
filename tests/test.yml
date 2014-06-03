@@ -1,4 +1,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-fail2ban
+    - ansible-role-netsecure
