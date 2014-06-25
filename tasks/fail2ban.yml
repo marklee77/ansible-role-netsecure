@@ -1,5 +1,5 @@
 ---
-- name: install fail2ban packages
+- name: ensure fail2ban packages are installed
   apt: 
     pkg: "{{ item }}" 
     state: latest 

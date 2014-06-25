@@ -275,7 +275,7 @@ logpath = /var/log/lighttpd/error.log
 
 [nginx-http-auth]
 
-enabled = false
+enabled = true
 filter  = nginx-http-auth
 port    = http,https
 logpath = /var/log/nginx/error.log
@@ -284,7 +284,7 @@ logpath = /var/log/nginx/error.log
 
 [roundcube-auth]
 
-enabled  = false
+enabled  = true
 filter   = roundcube-auth
 port     = http,https
 logpath  = /var/log/roundcube/userlogins
@@ -350,7 +350,7 @@ maxretry = 6
 
 [postfix]
 
-enabled  = false
+enabled  = true
 port     = smtp,ssmtp,submission
 filter   = postfix
 logpath  = /var/log/mail.log
@@ -389,7 +389,7 @@ logpath  = /var/log/mail.log
 
 [dovecot]
 
-enabled = false
+enabled = true
 port    = smtp,ssmtp,submission,imap2,imap3,imaps,pop3,pop3s
 filter  = dovecot
 logpath = /var/log/mail.log

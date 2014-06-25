@@ -1,5 +1,5 @@
 ---
-- name: install blacklist packages
+- name: ensure blacklist packages are installed
   apt: 
     pkg: "{{ item }}" 
     state: latest 

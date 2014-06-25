@@ -1,0 +1,7 @@
+- harden? 
+- selinux?
+- firewall?
+- search apt for stuff...
+- ids
+- tripwire, snort, harden?
+- selinux?

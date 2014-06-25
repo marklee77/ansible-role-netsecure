@@ -11,6 +11,7 @@ Example Playbook
 -------------------------
 
     - hosts: all
+      sudo: True
       roles:
         - marklee77.netsecure
 
