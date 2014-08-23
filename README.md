@@ -8,7 +8,7 @@ security. In particular, this installs fail2ban and various openssh and openssl
 blacklists.
 
 Example Playbook
--------------------------
+----------------
 
     - hosts: all
       sudo: True
@@ -23,4 +23,4 @@ GPLv2
 Author Information
 ------------------
 
-http://marklee77.github.io/
+http://stillwell.me
