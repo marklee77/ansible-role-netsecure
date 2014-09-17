@@ -13,4 +13,5 @@ galaxy_info:
     - saucy
     - trusty
   categories:
+  - system
 dependencies: []
