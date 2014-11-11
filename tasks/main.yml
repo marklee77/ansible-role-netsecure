@@ -1,3 +1,4 @@
 ---
+- include: shorewal.yml
 - include: fail2ban.yml
 - include: blacklists.yml
