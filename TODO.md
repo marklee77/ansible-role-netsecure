@@ -1,6 +1,7 @@
 - harden? 
 - selinux?
 - firewall?
+    - ufw enable...
 - search apt for stuff...
 - ids
 - tripwire, snort, harden?
