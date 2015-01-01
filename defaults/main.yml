@@ -1,4 +1,4 @@
 ---
-fail2ban_default_bantime: 10800
-fail2ban_default_findtime: 10800
-fail2ban_default_maxretry: 3
+netsecure_fail2ban_bantime: 10800
+netsecure_fail2ban_findtime: 10800
+netsecure_fail2ban_maxretry: 3
