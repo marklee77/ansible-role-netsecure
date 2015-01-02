@@ -1,7 +1,5 @@
-- harden? 
-- selinux?
-- firewall?
-    - ufw enable...
+- set up to work with ufw
+- nginx badbots and http probe detection and blocking
 - search apt for stuff...
 - ids
 - tripwire, snort, harden?
