@@ -9,15 +9,15 @@
     - fail2ban
     - python-pyinotify
  
-- name: update fail2ban ufw action from template
-  template:
-    src: etc/fail2ban/action.d/ufw.conf
-    dest: /etc/fail2ban/action.d/ufw.conf
-    owner: root
-    group: root
-    mode: 0644
-  notify:
-    - restart fail2ban
+#- name: update fail2ban ufw action from template
+#  template:
+#    src: etc/fail2ban/action.d/ufw.conf
+#    dest: /etc/fail2ban/action.d/ufw.conf
+#    owner: root
+#    group: root
+#    mode: 0644
+#  notify:
+#    - restart fail2ban
 
 - name: update fail2ban jail.local from template
   template:

@@ -1,3 +1,5 @@
+- ufw allow ssh && ufw limit ssh
+- user ipset / allport rules?
 - set up to work with ufw?
 - nginx badbots and http probe detection and blocking
 - search apt for stuff...

@@ -10,6 +10,6 @@
  
 - name: ensure ufw service is started and enabled
   ufw:
-    rule: allow
+    rule: limit
     port: ssh
     state: enabled
