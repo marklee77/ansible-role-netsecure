@@ -1,0 +1,15 @@
+---
+- name: ensure ufw packages are installed
+  apt: 
+    pkg: "{{ item }}" 
+    state: latest 
+    update_cache: yes 
+    cache_valid_time: 600
+  with_items:
+    - ufw
+ 
+- name: ensure ufw service is started and enabled
+  ufw:
+    rule: allow
+    port: ssh
+    state: enabled

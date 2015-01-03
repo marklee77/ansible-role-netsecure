@@ -1,6 +1,7 @@
-- set up to work with ufw
+- set up to work with ufw?
 - nginx badbots and http probe detection and blocking
 - search apt for stuff...
 - ids
-- tripwire, snort, harden?
+- tripwire, harden?
 - selinux?
+- http://whyscream.net/wiki/index.php/Fail2ban_monitoring_Fail2ban

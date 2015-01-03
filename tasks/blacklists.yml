@@ -10,3 +10,4 @@
     - openssh-blacklist-extra
     - openssl-blacklist
     - openssl-blacklist-extra
+    - openvpn-blacklist
