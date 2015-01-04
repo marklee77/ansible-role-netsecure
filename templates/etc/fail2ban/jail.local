@@ -68,7 +68,7 @@ sendername = Fail2Ban
 # iptables-multiport, shorewall, etc) It is used to define
 # action_* variables. Can be overridden globally or per
 # section within jail.local file
-banaction = iptables-allports
+banaction = iptables-multiport
 
 # email action. Since 0.8.1 upstream fail2ban uses sendmail
 # MTA for the mailing. Change mta configuration parameter to mail
@@ -145,17 +145,17 @@ logpath   = /var/log/auth.log
 enabled   = false
 port      = http,https
 filter    = php-url-fopen
-logpath   = /var/log/php5-fpm.log
+logpath   = /var/log/nginx/*access.log
 
 [nginx-http-auth]
-enabled   = false
+enabled   = true
 filter    = nginx-http-auth
 port      = http,https
 logpath   = /var/log/nginx/*error.log
 
 # Monitor roundcube server
 [roundcube-auth]
-enabled   = false
+enabled   = true
 filter    = roundcube-auth
 port      = http,https
 logpath   = /var/log/roundcube/userlogins
@@ -165,13 +165,13 @@ logpath   = /var/log/roundcube/userlogins
 #
 
 [postfix]
-enabled   = false
+enabled   = true
 port      = smtp,ssmtp,submission
 filter    = postfix
 logpath   = /var/log/mail.log
 
 [sasl]
-enabled   = false
+enabled   = true
 port      = smtp,ssmtp,submission,imap2,imap3,imaps,pop3,pop3s
 filter    = postfix-sasl
 # You might consider monitoring /var/log/mail.warn instead if you are
@@ -180,7 +180,7 @@ filter    = postfix-sasl
 logpath   = /var/log/mail.log
 
 [dovecot]
-enabled   = false
+enabled   = true
 port      = smtp,ssmtp,submission,imap2,imap3,imaps,pop3,pop3s
 filter    = dovecot
 logpath   = /var/log/auth.log

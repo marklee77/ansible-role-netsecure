@@ -1,4 +1,5 @@
 - ufw allow ssh && ufw limit ssh
+- deal with multiple pam modules and failures?
 - user ipset / allport rules?
 - set up to work with ufw?
 - nginx badbots and http probe detection and blocking
