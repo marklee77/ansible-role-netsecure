@@ -2,3 +2,4 @@
 - include: ufw.yml
 - include: fail2ban.yml
 - include: blacklists.yml
+- include: ssh.yml
