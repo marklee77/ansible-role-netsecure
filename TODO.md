@@ -1,3 +1,4 @@
+- start using fail2ban.d and jail.d instead of big jail.local...
 - ufw allow ssh && ufw limit ssh
 - deal with multiple pam modules and failures?
 - user ipset / allport rules?

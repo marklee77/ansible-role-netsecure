@@ -148,14 +148,14 @@ filter    = php-url-fopen
 logpath   = /var/log/nginx/*access.log
 
 [nginx-http-auth]
-enabled   = true
+enabled   = false
 filter    = nginx-http-auth
 port      = http,https
 logpath   = /var/log/nginx/*error.log
 
 # Monitor roundcube server
 [roundcube-auth]
-enabled   = true
+enabled   = false
 filter    = roundcube-auth
 port      = http,https
 logpath   = /var/log/roundcube/userlogins
@@ -165,13 +165,13 @@ logpath   = /var/log/roundcube/userlogins
 #
 
 [postfix]
-enabled   = true
+enabled   = false
 port      = smtp,ssmtp,submission
 filter    = postfix
 logpath   = /var/log/mail.log
 
 [sasl]
-enabled   = true
+enabled   = false
 port      = smtp,ssmtp,submission,imap2,imap3,imaps,pop3,pop3s
 filter    = postfix-sasl
 # You might consider monitoring /var/log/mail.warn instead if you are
@@ -180,7 +180,7 @@ filter    = postfix-sasl
 logpath   = /var/log/mail.log
 
 [dovecot]
-enabled   = true
+enabled   = false
 port      = smtp,ssmtp,submission,imap2,imap3,imaps,pop3,pop3s
 filter    = dovecot
 logpath   = /var/log/auth.log
